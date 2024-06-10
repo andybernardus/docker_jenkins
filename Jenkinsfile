@@ -1,5 +1,5 @@
 pipeline{
-    agent any{
+    agent any
         stage("checkout"){
             steps{
                 checkout scm
@@ -17,5 +17,4 @@ pipeline{
                 sh "npm run build"
             }
         }
-    }
 }
