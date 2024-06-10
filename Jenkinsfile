@@ -23,16 +23,4 @@ pipeline{
             }
         }
     }
-    post {
-        always {
-            // Clean up Docker images
-            sh 'docker image prune -f'
-        }
-        success {
-            echo 'Build completed successfully'
-        }
-        failure {
-            echo 'Build failed'
-        }
-    }
 }
