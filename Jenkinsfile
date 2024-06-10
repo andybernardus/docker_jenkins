@@ -2,7 +2,7 @@ pipeline{
     agent any
 
     tools {nodejs "NODEJS"} 
-    
+
     stages{
         stage("checkout"){
             steps{
@@ -18,7 +18,7 @@ pipeline{
 
         stage("Build"){
             steps{
-                sh "npm run build"
+                sh "npm run start"
             }
         }
     }
